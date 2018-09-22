@@ -38,9 +38,9 @@ def turn(board)
   end
 end
 
-def turn_count(board)
+def turn_count
  counter = 0
-    board.each do |cell|
+    @board.each do |cell|
       if cell != " " && cell != ""
        counter +=1
      end
