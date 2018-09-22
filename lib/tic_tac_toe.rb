@@ -22,7 +22,7 @@ def valid_move?(index)
  position_taken?(@board, index) == false && index.between?(0,8)
  end
 
-def position_taken?(board, index)
+def position_taken?(index)
   !(board[index].nil? || board[index] == " ")
 end
 
