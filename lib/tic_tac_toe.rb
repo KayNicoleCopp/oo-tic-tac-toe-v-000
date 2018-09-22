@@ -117,13 +117,13 @@ winning_array = won?
 end
 
 
-def play(board)
-    until over?(board)
-      turn(board)
+def play
+    until over?
+      turn
   end
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  elsif draw?(board)
+  if won?
+    puts "Congratulations #{winner}!"
+  elsif draw?
     puts "Cat's Game!"
   end
 end
