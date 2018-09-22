@@ -107,10 +107,10 @@ if won?  || full?  || draw?
 end
 end
 
-def winner(board)
-winning_array = won?(board)
+def winner
+winning_array = won?
   if winning_array
-  board[winning_array[0]]
+  @board[winning_array[0]]
  else
   nil
   end
