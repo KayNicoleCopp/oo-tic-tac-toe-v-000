@@ -14,8 +14,8 @@ def input_to_index(user_input)
   return user_input.to_i - 1
 end
 
-def move(array, index, value)
-  array[index] = value
+def move(index, value)
+  @board[index] = value
 end
 
 def valid_move?(board, index)
