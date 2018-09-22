@@ -93,8 +93,8 @@ def full?
 end
 end
 
-def draw?(board)
- if full?(board) == true && won?(board) == false
+def draw?
+ if full? == true && won? == false
    return true
  else
    false
