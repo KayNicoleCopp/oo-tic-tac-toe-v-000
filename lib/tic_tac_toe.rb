@@ -87,8 +87,8 @@ def won?
  false
 end
 
-def full?(board)
-  board.all? do |position_taken|
+def full?
+  @board.all? do |position_taken|
     position_taken == "X" || position_taken == "O"
 end
 end
